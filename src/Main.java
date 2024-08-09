@@ -47,13 +47,14 @@ public class Main {
 //
 //     3 - Двухмерный массив + сортировка по убыванию
         int[][] multiDArray = new int[3][3];
-            for(int i = 0; i < multiDArray.length; i++) {
-            for(int k = 0; k < multiDArray[i].length; k++) {
-            multiDArray[i][k] = (int)(Math.random() * 100);
-                Arrays.sort(multiDArray[i]);
-                System.out.println(multiDArray[i][k] + " ");
+        for (int i = 0; i < multiDArray.length; i++) {
+            for (int k = 0; k < multiDArray[i].length; k++) {
+                multiDArray[i][k] = (int) (Math.random() * 100);
+
             }
+            Arrays.sort(multiDArray[i]);
         }
+        System.out.println(Arrays.deepToString(multiDArray));
 
 //
 //        // 4 - Простые числа
