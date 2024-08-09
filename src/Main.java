@@ -24,7 +24,7 @@ public class Main {
     for (int i = 0; i < randomArray.length; i++) {
         avarage += randomArray[i]/randomArray.length;
     }
-
+//
         System.out.println("Минимальное значение: " + min);
         System.out.println("Среднее значение: " + avarage);
         System.out.println("Максимальное значение: " + max);
