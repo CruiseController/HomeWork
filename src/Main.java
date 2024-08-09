@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
 //       // 1 - Массив случайных чисел
@@ -44,22 +45,16 @@ public class Main {
 //            System.out.println(value + ", ");
 //        }
 //
-//        // 3 - Двухмерный массив + сортировка по убыванию
-//        int[][] multiDArray = new int[3][3];
-//        for(int i = 0; i < multiDArray.length; i++) {
-//            for(int k = 0; k < multiDArray[i].length; k++) {
-//            multiDArray[i][k] = (int) (Math.random() * 100);
-//                System.out.println(Arrays.toString(multiDArray[i]) + " " + Arrays.toString(multiDArray[k]));
-//            }
-//        }
-//        Arrays.sort(multiDArray, new Comparator<int[]>() {
-//            @Override
-//            public int compare(int[] o1, int[] o2) {
-//                return 0;
-//
-//            }
-//        }
-//        );
+//     3 - Двухмерный массив + сортировка по убыванию
+        int[][] multiDArray = new int[3][3];
+            for(int i = 0; i < multiDArray.length; i++) {
+            for(int k = 0; k < multiDArray[i].length; k++) {
+            multiDArray[i][k] = (int)(Math.random() * 100);
+                Arrays.sort(multiDArray[i]);
+                System.out.println(multiDArray[i][k] + " ");
+            }
+        }
+
 //
 //        // 4 - Простые числа
 //for(int i = 2; i < 100; i++) {
@@ -78,17 +73,17 @@ public class Main {
 
         // 5 - Массив и число
 
-        int[] simpleArray = new int[8];
-int number = 3;
-for(int i = 0; i < simpleArray.length; i++) {
-    simpleArray[i] = (int) (Math.random() * 10);
-    //System.out.println(simpleArray[i]);
-    if(simpleArray[i] == number) {
-        simpleArray = ArrayUtils.removeElement(simpleArray, number);
-            }
-    System.out.println(simpleArray[i]);
+//        int[] simpleArray = new int[8];
+//int number = 3;
+//for(int i = 0; i < simpleArray.length; i++) {
+//    simpleArray[i] = (int) (Math.random() * 10);
+//    //System.out.println(simpleArray[i]);
+//    if(simpleArray[i] == number) {
+//        simpleArray = ArrayUtils.removeElement(simpleArray, number);
+//            }
+//    System.out.println(simpleArray[i]);
+//   }
    }
-    }
 }
 
 
