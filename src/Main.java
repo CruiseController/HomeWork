@@ -28,6 +28,5 @@ public class Main {
         System.out.println("Минимальное значение: " + min);
         System.out.println("Среднее значение: " + avarage);
         System.out.println("Максимальное значение: " + max);
-
     }
 }
